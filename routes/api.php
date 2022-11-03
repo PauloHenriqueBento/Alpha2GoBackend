@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('produtos', ProdutoController::class);
+Route::apiResource('produtos/{id}', ProdutoController::class);
+
